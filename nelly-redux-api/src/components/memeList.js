@@ -25,6 +25,11 @@ class MemeList extends React.Component {
     return (
       <div className="App">
         <button
+          style={{
+            backgroundColor: "#8b9dc3",
+            color: "#f7f7f7",
+            fontSize: "1.4em",
+          }}
           onClick={() => {
             const idx = Math.floor(Math.random() * 100)
             console.log(idx)
@@ -39,9 +44,10 @@ class MemeList extends React.Component {
         </button>
         {console.log(this.state.newObj)}
         <div>
-          <h2>{this.state.newObj.name}</h2>
+          <h2 style={{ color: "#29487D" }}>{this.state.newObj.name}</h2>
         </div>
         <img
+          style={{ paddingBottom: "30px" }}
           width="300px"
           src={this.state.newObj.url}
           alt={this.state.memes.id}

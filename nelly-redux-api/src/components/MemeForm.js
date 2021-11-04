@@ -4,7 +4,14 @@ const MemeForm = () => {
   return (
     <form>
       <input placeholder="number from 1-100" />
-      <button>enter number</button>
+      <button
+        style={{
+          backgroundColor: "#8b9dc3",
+          color: "#f7f7f7",
+        }}
+      >
+        enter number
+      </button>
     </form>
   )
 }
