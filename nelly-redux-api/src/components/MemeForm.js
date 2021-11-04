@@ -8,6 +8,7 @@ const MemeForm = () => {
         style={{
           backgroundColor: "#8b9dc3",
           color: "#f7f7f7",
+          marginBottom: "20px",
         }}
       >
         enter number

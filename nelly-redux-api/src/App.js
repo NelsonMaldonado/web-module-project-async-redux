@@ -31,11 +31,12 @@ function App(props) {
             borderRadius: "50%",
             backgroundColor: "white",
             marginTop: "20px",
+            boxShadow: "inset 3px 4px 5px rgba(0, 0, 0, 0.45)",
           }}
         ></div>
         <p
           style={{
-            marginTop: "50px",
+            marginTop: "20px",
             backgroundColor: "#4267B3",
             FontFace: "Helvetica",
             fontSize: "2em",
@@ -45,8 +46,9 @@ function App(props) {
         >
           Random Meme ID
         </p>
-        <MemeForm />
+
         {loading ? <h3>loading</h3> : <MemeList />}
+        <MemeForm />
       </div>
     </div>
   )
